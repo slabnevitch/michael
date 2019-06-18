@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body data-slideout-ignore>
     <nav class="mich-mob-nav">
       <ul class="header-mob-menu">
         <li><a href="#" class="mich-link-menu">О бренде</a></li>
@@ -22,22 +22,25 @@
             <li><a href="#" class="mich-link-menu header-menu__sublink">Уход за волосами</a></li>
           </ul>
         </li>
-        <li><a href="#" class="mich-link-menu">Блог</a>
-          <ul>
-            <li><a href="#" class="mich-link-menu header-menu__sublink">Вопросы и Ответы</a></li>
-            <li><a href="#" class="mich-link-menu header-menu__sublink">Новости D’Michael</a></li>
-            <li><a href="#" class="mich-link-menu header-menu__sublink">“Дайте мне красоты!”</a></li>
-          </ul>
-        </li>
+        <li><a href="#" class="mich-link-menu">Вопрос и Ответ</a></li>
+        <li><a href="#" class="mich-link-menu">Новости бренда</a></li>
+        <li><a href="#" class="mich-link-menu">Блог “Дайте мне красоты!</a></li>
         <li><a href="#" class="mich-link-menu">Контакты</a></li>
+        <li><a href="#" class="mich-link-menu">Стать дистрибьютером</a></li>
+        <li><a href="#" class="mich-link-menu">Где купить?</a></li>
       </ul>
     </nav>
     <main class="mich-main">
       <div class="mich-main__inner">
         <header class="header">
           <div class="header-top">
-            <div class="wrapper"><a href="#mich-popup-distr" class="button to-popup">Стать дистрибьютором</a><a href="#" class="header-logo"><img src="img/logo.png" alt="alt"></a>
-              <div class="header-top__right"><a href="#" class="header-top__where"><span class="iconed-link mich-icomoon-icon icon-loc"></span><span class="mich-link">Где купить?</span></a><a href="#" class="iconed-link mich-icomoon-icon icon-heart-empty"></a></div>
+            <div class="wrapper"><a href="#" class="toggle-mnu"><span></span></a><a href="#mich-popup-distr" class="button to-popup">Стать дистрибьютором</a><a href="#" class="header-logo"><img src="img/logo.png" alt="alt"></a>
+              <div class="header-top__right"><a href="#" class="header-top__where"><span class="iconed-link mich-icomoon-icon icon-loc"></span><span class="mich-link">Где купить?</span></a><a href="#" class="iconed-link mich-icomoon-icon icon-heart-empty"></a><a href="#" class="iconed-link mich-icomoon-icon icon-mag"></a></div>
+              <form action="#" class="mich-form mob-search-form">
+                <label class="mich-form-label">
+                  <input type="text" name="" placeholder="Поиск по каталогу" class="mich-form-input mich-inp-serif">
+                </label><a href="#" class="mich-icomoon-icon icon-close"></a>
+              </form>
             </div>
           </div>
           <div class="header-bottom">
@@ -75,6 +78,7 @@
             </div>
           </div>
         </header>
+        <div class="title-mobile"><a href="#">Вернуться в каталог</a></div>
         <div style="background-color: #6BD1DD;" class="product-top">
           <div class="wrapper product-top__wrapper">
             <div class="product-nav"></div>
@@ -97,6 +101,9 @@
             </div>
           </div>
         </div>
+        <div class="wrapper product-info-mobile">
+          <div class="product-info__title">Маска для рук D'Michaél Les note de Versailles</div><a href="#" class="mich-icomoon-icon iconed-link icon-heart-empty"></a>
+        </div>
         <div class="product-chars">
           <div class="tabs">
             <div class="product-chars__tabs-top">
@@ -105,7 +112,7 @@
                   <li class="tabs__item tabs__item--active"><a href="#" data-tab="1" class="tabs__link">Нанесение</a></li>
                   <li class="tabs__item"><a href="#" data-tab="2" class="tabs__link">Ингридиенты</a></li>
                   <li class="tabs__item"><a href="#" data-tab="3" class="tabs__link">Характеристики</a></li>
-                  <li class="tabs__item"><a href="#" data-tab="4" class="tabs__link">Отзывы (3)</a></li>
+                  <li class="tabs__item"><a href="#" data-tab="4" class="tabs__link">Отзывы <span class="reviews-count">(3)</span></a></li>
                 </ul>
               </div>
             </div>
@@ -121,6 +128,11 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="product-info__share product-info__share--mob">
+            <div>Поделиться товаром:</div><a href="#" class="mich-icomoon-icon iconed-link icon-inst"></a><a href="#" class="mich-icomoon-icon iconed-link icon-vk"></a><a href="#" class="mich-icomoon-icon iconed-link icon-fb"></a><a href="#" class="mich-icomoon-icon iconed-link icon-pint"></a><a href="#" class="mich-icomoon-icon iconed-link icon-whatsapp"></a>
           </div>
         </div>
         <div class="products-recomended">
@@ -193,6 +205,22 @@
             </div>
           </div>
         </div>
+        <div class="mob-subscribe">
+          <div class="wrapper mob-subscr-container">
+            <form action="#" class="mich-form">
+              <div>Подписывайтесь на нашу рассылку!</div>
+              <label class="mich-form-label">
+                <input type="text" name="" placeholder="Ваше имя" required class="mich-form-input mich-inp-serif">
+              </label>
+              <button type="submit" class="button button-full button-wide">отправить</button>
+              <div class="mich-form__custom-policy">
+                <label class="mich-form-custom">
+                  <input type="checkbox" name="" checked required class="mich-form-check"><span class="mich-form__custom-chek"></span>
+                </label><span class="mich-form__policy">Я даю согласие на обработку моих персональных данных в порядке и на условиях, <a href="#">указанных в согласии</a>.</span>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
       <footer class="footer">
         <div class="footer-top">
@@ -200,7 +228,7 @@
             <div class="footer-contacts"><a href="#" class="footer-logo"><img src="img/logo.png" alt="alt"></a>
               <p>г. Санкт-Петербург<br>ул. Прогонная, д. 3 <br>Тел.: 8 (812) 213 33 77</p>
             </div>
-            <div class="footer-menu">
+            <ul class="footer-menu">
               <li><a href="#" class="mich-link-menu">О бренде</a></li>
               <li><a href="#" class="mich-link-menu">Каталог продукции</a>
                 <ul>
@@ -215,8 +243,13 @@
                   <li><a href="#" class="mich-link-menu header-menu__sublink">“Дайте мне красоты!”</a></li>
                 </ul>
               </li>
-              <li><a href="#" class="mich-link-menu">Стать дистрибьютером</a></li>
               <li><a href="#" class="mich-link-menu">Контакты</a></li>
+              <li class="go-distributor"><a href="#" class="mich-link-menu">Стать дистрибьютером</a></li>
+              <li><a href="#" class="mich-link-menu">Где купить?</a></li>
+            </ul>
+            <div class="footer-mob-data">
+              <div class="footer-socials"><span>Оставайтесь с нами!</span><span class="footer-socials__buttons"><a href="#" class="icon-vk iconed-link"></a><a href="#" class="icon-inst iconed-link"></a><a href="#" class="icon-youtube iconed-link"></a></span></div>
+              <p>г. Санкт-Петербург<br>ул. Прогонная, д. 3 <br>Тел.: 8 (812) 213 33 77</p>
             </div>
           </div>
         </div>

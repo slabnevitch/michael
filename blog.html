@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body data-slideout-ignore>
     <nav class="mich-mob-nav">
       <ul class="header-mob-menu">
         <li><a href="#" class="mich-link-menu">О бренде</a></li>
@@ -22,22 +22,25 @@
             <li><a href="#" class="mich-link-menu header-menu__sublink">Уход за волосами</a></li>
           </ul>
         </li>
-        <li><a href="#" class="mich-link-menu">Блог</a>
-          <ul>
-            <li><a href="#" class="mich-link-menu header-menu__sublink">Вопросы и Ответы</a></li>
-            <li><a href="#" class="mich-link-menu header-menu__sublink">Новости D’Michael</a></li>
-            <li><a href="#" class="mich-link-menu header-menu__sublink">“Дайте мне красоты!”</a></li>
-          </ul>
-        </li>
+        <li><a href="#" class="mich-link-menu">Вопрос и Ответ</a></li>
+        <li><a href="#" class="mich-link-menu">Новости бренда</a></li>
+        <li><a href="#" class="mich-link-menu">Блог “Дайте мне красоты!</a></li>
         <li><a href="#" class="mich-link-menu">Контакты</a></li>
+        <li><a href="#" class="mich-link-menu">Стать дистрибьютером</a></li>
+        <li><a href="#" class="mich-link-menu">Где купить?</a></li>
       </ul>
     </nav>
     <main class="mich-main">
       <div class="mich-main__inner">
         <header class="header">
           <div class="header-top">
-            <div class="wrapper"><a href="#mich-popup-distr" class="button to-popup">Стать дистрибьютором</a><a href="#" class="header-logo"><img src="img/logo.png" alt="alt"></a>
-              <div class="header-top__right"><a href="#" class="header-top__where"><span class="iconed-link mich-icomoon-icon icon-loc"></span><span class="mich-link">Где купить?</span></a><a href="#" class="iconed-link mich-icomoon-icon icon-heart-empty"></a></div>
+            <div class="wrapper"><a href="#" class="toggle-mnu"><span></span></a><a href="#mich-popup-distr" class="button to-popup">Стать дистрибьютором</a><a href="#" class="header-logo"><img src="img/logo.png" alt="alt"></a>
+              <div class="header-top__right"><a href="#" class="header-top__where"><span class="iconed-link mich-icomoon-icon icon-loc"></span><span class="mich-link">Где купить?</span></a><a href="#" class="iconed-link mich-icomoon-icon icon-heart-empty"></a><a href="#" class="iconed-link mich-icomoon-icon icon-mag"></a></div>
+              <form action="#" class="mich-form mob-search-form">
+                <label class="mich-form-label">
+                  <input type="text" name="" placeholder="Поиск по каталогу" class="mich-form-input mich-inp-serif">
+                </label><a href="#" class="mich-icomoon-icon icon-close"></a>
+              </form>
             </div>
           </div>
           <div class="header-bottom">
@@ -75,40 +78,60 @@
             </div>
           </div>
         </header>
-        <section class="blog">
+        <section class="blog sect-titled-mob">
+          <h1 class="to-mobile">Блог</h1>
           <div class="wrapper">
-            <h1 class="wrapped">Блог</h1>
-          </div>
-          <div class="wrapper">
-            <div class="blog-previews">
-              <div style="background-image: url(img/blog/blog-1.jpg)" class="blog-preview">
+            <div class="blog-previews"><a href="#" style="background-image: url(img/blog/blog-1.jpg)" class="blog-preview blog-preview--main">
                 <div class="blog-preview__frame"></div>
-                <div class="blog-preview__big-title">Вопросы и Ответы</div>
-              </div>
-              <div style="background-image: url(img/blog/blog-2.jpg)" class="blog-preview">
+                <div class="blog-preview__big-title">Вопросы и Ответы</div></a><a href="#" class="blog-preview">
+                <div style="background-image: url(img/blog/blog-2.jpg)" class="blog-preview__image"></div>
                 <div class="blog-preview__header">
                   <div class="blog-preview__title">Наш новый дистрибьютер <br>салон “Красавица”</div>
                   <div class="blog-preview__info"><span class="blog-preview__date">20.03.2019</span><span class="blog-preview__name">Новости D’Michael</span></div>
                 </div>
-              </div>
-              <div class="blog-preview blog-preview--dbl">
-                <div style="background-image: url(img/blog/blog-3.jpg)" class="blog-preview-sub">
+                <div class="blog-preview__mob-header">
+                  <div class="blog-preview__info"><span class="blog-preview__date">20.03.2019</span><span class="blog-preview__name">Новости D’Michael</span></div>
+                  <div class="blog-preview__title">Наш новый дистрибьютер <br>салон “Красавица”</div>
+                </div></a>
+              <div class="blog-preview blog-preview--dbl"><a href="#" class="blog-preview-sub">
+                  <div style="background-image: url(img/blog/blog-3.jpg)" class="blog-preview__image"></div>
                   <div class="blog-preview__header">
                     <div class="blog-preview__title">Новый аромат от D’Michael Les notes de Alsace</div>
                     <div class="blog-preview__info"><span class="blog-preview__date">16.02.2019</span><span class="blog-preview__name">Новости D’Michael</span></div>
                   </div>
-                </div>
-                <div style="background-image: url(img/blog/blog-4.jpg)" class="blog-preview-sub">
+                  <div class="blog-preview__mob-header">
+                    <div class="blog-preview__info"><span class="blog-preview__date">16.02.2019</span><span class="blog-preview__name">Новости D’Michael</span></div>
+                    <div class="blog-preview__title">Новый аромат от D’Michael Les notes de Alsace</div>
+                  </div></a><a href="#" class="blog-preview-sub">
+                  <div style="background-image: url(img/blog/blog-4.jpg)" class="blog-preview__image"></div>
                   <div class="blog-preview__header">
                     <div class="blog-preview__title">Готовим себя к весне!</div>
                     <div class="blog-preview__info"><span class="blog-preview__date">01.03.2019</span><span class="blog-preview__name">Блог “Дайте мне красоты!”</span></div>
                   </div>
-                </div>
-              </div>
+                  <div class="blog-preview__mob-header">
+                    <div class="blog-preview__info"><span class="blog-preview__date">01.03.2019</span><span class="blog-preview__name">Блог “Дайте мне красоты!”</span></div>
+                    <div class="blog-preview__title">Готовим себя к весне!</div>
+                  </div></a></div>
             </div>
             <div class="blog-bottom text-center"><a href="#" class="button">ЕЩЁ</a></div>
           </div>
         </section>
+        <div class="mob-subscribe">
+          <div class="wrapper mob-subscr-container">
+            <form action="#" class="mich-form">
+              <div>Подписывайтесь на нашу рассылку!</div>
+              <label class="mich-form-label">
+                <input type="text" name="" placeholder="Ваше имя" required class="mich-form-input mich-inp-serif">
+              </label>
+              <button type="submit" class="button button-full button-wide">отправить</button>
+              <div class="mich-form__custom-policy">
+                <label class="mich-form-custom">
+                  <input type="checkbox" name="" checked required class="mich-form-check"><span class="mich-form__custom-chek"></span>
+                </label><span class="mich-form__policy">Я даю согласие на обработку моих персональных данных в порядке и на условиях, <a href="#">указанных в согласии</a>.</span>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
       <footer class="footer">
         <div class="footer-top">
@@ -116,7 +139,7 @@
             <div class="footer-contacts"><a href="#" class="footer-logo"><img src="img/logo.png" alt="alt"></a>
               <p>г. Санкт-Петербург<br>ул. Прогонная, д. 3 <br>Тел.: 8 (812) 213 33 77</p>
             </div>
-            <div class="footer-menu">
+            <ul class="footer-menu">
               <li><a href="#" class="mich-link-menu">О бренде</a></li>
               <li><a href="#" class="mich-link-menu">Каталог продукции</a>
                 <ul>
@@ -131,8 +154,13 @@
                   <li><a href="#" class="mich-link-menu header-menu__sublink">“Дайте мне красоты!”</a></li>
                 </ul>
               </li>
-              <li><a href="#" class="mich-link-menu">Стать дистрибьютером</a></li>
               <li><a href="#" class="mich-link-menu">Контакты</a></li>
+              <li class="go-distributor"><a href="#" class="mich-link-menu">Стать дистрибьютером</a></li>
+              <li><a href="#" class="mich-link-menu">Где купить?</a></li>
+            </ul>
+            <div class="footer-mob-data">
+              <div class="footer-socials"><span>Оставайтесь с нами!</span><span class="footer-socials__buttons"><a href="#" class="icon-vk iconed-link"></a><a href="#" class="icon-inst iconed-link"></a><a href="#" class="icon-youtube iconed-link"></a></span></div>
+              <p>г. Санкт-Петербург<br>ул. Прогонная, д. 3 <br>Тел.: 8 (812) 213 33 77</p>
             </div>
           </div>
         </div>
